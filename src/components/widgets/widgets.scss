@@ -1,0 +1,67 @@
+.widget {
+  // background-color: burlywood;
+  padding: 10px;
+  height: 100px;
+  display: flex;
+  flex: 1;
+  border-radius: 10px;
+  justify-content: space-between;
+  // -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+  // box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+
+  // -webkit-box-shadow: 0px 0px 13px -5px rgba(214, 206, 214, 0.73);
+  // -moz-box-shadow: 0px 0px 13px -5px rgba(214, 206, 214, 0.73);
+  // box-shadow: 0px 0px 13px -5px rgba(214, 206, 214, 0.73);
+
+  -webkit-box-shadow: 0px 0px 13px -5px rgba(156, 148, 156, 1);
+  -moz-box-shadow: 0px 0px 13px -5px rgba(156, 148, 156, 1);
+  box-shadow: 0px 0px 13px -5px rgba(156, 148, 156, 1);
+
+  .right,
+  .left {
+    // background-color: cyan;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .title {
+      font-weight: 600;
+      font-size: 14px;
+      color: #888;
+    }
+    .number {
+      font-size: 28px;
+      font-weight: 300;
+    }
+    .link {
+      width: max-content;
+      font-size: 12px;
+      cursor: pointer;
+      border-bottom: 1px solid #808080;
+    }
+    .percentage {
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      font-weight: 600;
+
+      &.positive {
+        // color: #A1DD70;
+        color: #68C170;
+      }
+      &.negative {
+        color: #E7475E;
+      }
+    }
+    .icon {
+      align-self: flex-end;
+      /* background-color: #44c1c14d; */
+      background-color: #eeeeee8f;
+      border-radius: 5px;
+      font-size: 22px;
+      color: #47a992;
+      padding: 3px;
+     
+    }
+  }
+}
