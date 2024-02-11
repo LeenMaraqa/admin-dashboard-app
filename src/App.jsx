@@ -6,6 +6,7 @@ import Login from "./pages/login/Login";
 import New from "./pages/new/New";
 import Single from "./pages/single/Single";
 import { productInputs, userInputs } from "./formSource";
+import Products from "./pages/products/Products";
 
 const App = () => {
   return (
@@ -24,7 +25,7 @@ const App = () => {
               />
             </Route>
             <Route path="products">
-              <Route index element={<List />} />
+              <Route index element={<Products />} />
               <Route path=":productId" element={<Single />} />
               <Route
                 path="new"

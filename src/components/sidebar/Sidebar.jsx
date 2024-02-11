@@ -37,11 +37,18 @@ const Sidebar = () => {
               <span>Users</span>
             </li>
           </Link>
-          <li>
+          {/* <li>
             {" "}
             <ProductionQuantityLimitsIcon className="icon" />
             <span>Products</span>
-          </li>
+          </li> */}
+            <Link to="/products" style={{ textDecoration: "none" }}>
+            <li>
+              {" "}
+              <ProductionQuantityLimitsIcon className="icon" />
+              <span>Products</span>
+            </li>
+          </Link>
           <li>
             {" "}
             <ViewListIcon className="icon" />
